@@ -241,44 +241,36 @@
 <div class="fade modal" id="formModal">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="bg-transparent border-0 modal-content">
-      <div class="bounce-block" style="padding: 0 20px 20px 0;">
-        <div class="bg-white bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 20px; top: 20px;">
+      <form class="bg-white form-modal" style="padding: 20px">
+        <p class="form-modal__title">поработаем вместе?</p>
+        <input type="text" placeholder="ваше имя" class="form-modal__input">
+        <input type="text" placeholder="как с вами связаться" class="form-modal__input">
+        <textarea name="" placeholder="о вашем проекте" class="form-modal__input form-modal__input--textarea"></textarea>
+        <div class="d-flex justify-content-center">
+          <div type="submit" value="отправить" class="form-modal__submit-btn" data-bs-toggle="modal" data-bs-target="#modalThanx" data-bs-dismiss="modal">
+            отправить
+          </div>
         </div>
-        <div class="bounce-block__wrapper bounce-block__wrapper--content">
-          <form class="form-modal">
-            <p class="form-modal__title">поработаем вместе?</p>
-            <input type="text" placeholder="ваше имя" class="form-modal__input">
-            <input type="text" placeholder="как с вами связаться" class="form-modal__input">
-            <textarea name="" placeholder="о вашем проекте" class="form-modal__input form-modal__input--textarea"></textarea>
-            <input type="text" placeholder="предполагаемый бюджет" class="form-modal__input">
-            <div class="d-flex justify-content-center">
-              <div type="submit" value="отправить" class="form-modal__submit-btn" data-bs-toggle="modal" data-bs-target="#modalThanx" data-bs-dismiss="modal">отправить</div>
-            </div>
-          </form>
-        </div>
-
-      </div>
+      </form>
     </div>
-
-
   </div>
 </div>
-
 
 <div class="fade modal" id="modalThanx">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="bg-transparent border-0 modal-content">
       <div class="d-flex bg-white flex-column gap-30 p-30 rounded-15">
-        <span class="fs-3 text-secondary"> Спасибо!
-          <br> Мы свяжемся с Вами в ближайшее время</span>
-        <div class="form-modal__submit-btn text-center" data-bs-dismiss="modal">закрыть</div>
+        <span class="fs-3 text-secondary">
+          Спасибо! <br>
+          Мы свяжемся с Вами в ближайшее время</span>
+        <div class="form-modal__submit-btn text-center" data-bs-dismiss="modal">
+          закрыть
+        </div>
       </div>
-
     </div>
-
-
   </div>
 </div>
+
 <script src="js/app.min.js"></script>
 
   </body>
